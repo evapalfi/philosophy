@@ -1,0 +1,345 @@
+html,
+body {
+    width: 100vw;
+    margin: 0;
+    background-color: rgb(242, 242, 242);
+}
+
+.top-container {
+    background-color: black;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    height: 6rem;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li,
+nav ul li {
+    list-style-type: none;
+}
+
+.fa {
+    padding: 0px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(254, 254, 254);
+  }
+
+  header h1 {
+      color: rgb(254, 254, 254);
+      font-size: 2.5rem;
+  }
+
+  .search {
+    background-color: black;
+    border-color: black;
+    border: 0;
+    height: 1rem;
+  }
+
+  .search-container {
+      color: white;
+      position: relative;
+  }
+
+  .search-container input {
+      color: white;
+  }
+
+.search-container::after {
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    display: block;
+    right: 4rem;
+    top: 0.2rem;
+    background-image: url(./pics/search_icon.jpeg);
+    background-size: cover;
+    filter: invert(1);
+}
+
+.top-container .top-line {
+    height: 0.5px;
+    background-color: rgb(24, 23, 23);
+    margin: 0 13rem;
+}
+nav {
+    height: 5rem;
+    width: 100%;
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    height: 5rem;
+    margin: 0;
+    justify-content: space-between;
+    padding: 0 20rem;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav a {
+    padding-left: 1.3rem;
+    text-decoration: none;
+    color: rgb(118, 118, 118);
+}
+
+nav a:hover span {
+    color: white;
+}
+
+.main {
+    display: flex;
+    height: calc(100vh / 1.7);
+    background-color: black;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    height: 94%;
+    width: 70%;
+    display: flex;
+}
+
+.container::before {
+    content: "";
+    height: 2px;
+    width: 3rem;
+    background-color: rgb(24, 23, 23);
+    position: absolute;
+    display: block;
+    left: 9.5rem;
+    top: 255px;
+}
+
+.container::after {
+    content: "";
+    height: 2px;
+    width: 3rem;
+    background-color: rgb(24, 23, 23);
+    position: absolute;
+    display: block;
+    right: 9.5rem;
+    top: 255px;
+}
+
+.music-card {
+    width: 65%;
+    background-image: url(./pics/music.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.music-card h4 {
+    color: white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-top: 13rem;
+    margin-left: 2rem;
+    background-color: rgb(0, 174, 240);
+    padding: 0.5rem;
+    width: 2.7rem;
+}
+
+.music-card p {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    margin-left: 2rem;
+}
+
+.music-card h5 {
+    color: white;
+    margin-left: 2rem;
+}
+
+.extra-cards {
+    /* height: 100%; */
+    width: 35%;
+}
+
+.management-card {
+    background-image: url(./pics/management.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+}
+  
+.management-card h4 {
+    color: white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin: 0.7rem 0;
+    background-color: rgb(106, 155, 39);
+    padding: 0.5rem;
+    width: 6rem;
+}
+
+.text-box {
+    padding-top: 5.5rem;
+    padding-left: 2rem;
+}
+
+.management-card p {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.management-card h5 {
+    color: white;
+    margin: 1rem 0 0 0;
+}
+
+.lifestyle-card {
+    background-image: url(./pics/lifestyle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+}
+
+.lifestyle-card h4 {
+    color: white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin: 0.7rem 0;
+    background-color: rgb(106, 155, 39);
+    padding: 0.5rem;
+    width: 4.5rem;
+}
+
+.lifestyle-card p {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.lifestyle-card h5 {
+    color: white;
+    margin: 1rem 0 0 0;
+}
+
+.factcards-container {
+    display: flex;
+    justify-content: space-between;
+    height: 30rem;
+    background-color: rgb(242, 242, 242);
+    margin: 4rem 7rem;
+}
+
+.factcard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 23%;
+    background-color: white;
+    
+}
+
+.photo1 {
+    background-image: url(./pics/lamp.png);
+    background-size: cover;
+    height: 70%;
+}
+
+.different-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.different-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    margin: 0;
+}
+
+.photo2 {
+    background-image: url(./pics/design.jpg);
+    background-size: cover;
+    height: 16%;
+}
+
+.photo3 {
+    background-image: url(./pics/coffee.png);
+    background-size: cover;
+    height: 70%;
+}
+
+.photo4 {
+    background-image: url(./pics/cookies.jpg);
+    background-size: cover;
+    height: 70%;
+    display: flex;
+    text-align: center;
+    position: relative;
+}
+
+.photo4 span {
+    color: white;
+    font-size: 1.5rem;
+    height: 100%;
+    width: 100%;
+    padding-top: 10rem;
+    z-index: 1;
+}
+
+.photo4::before {
+width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+}
+
+.factcard>h5 {
+    color: grey;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.different-card .text-box h5 {
+    color: grey;
+}
+
+.factcard h2 {
+    margin: 0 2rem;
+}
+
+.different-card .text-box {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+}
+
+.different-card .text-box h1 {
+    color: rgb(209, 207, 207);
+    font-size: 3.5rem;
+    font-family: 'Secular One', sans-serif;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
